@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriAssist – Crop Health Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌾 AgriAssist</h1>
+    <p>Upload your crop image and describe the issue you’re facing.</p>
+
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" id="imageInput" accept="image/*" required />
+      <textarea id="queryInput" placeholder="Ask something about your crop..." required></textarea>
+      <button type="submit">Analyze</button>
+    </form>
+
+    <div id="resultContainer" class="hidden">
+      <h2>Result</h2>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+  <!-- Markdown renderer and sanitizer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

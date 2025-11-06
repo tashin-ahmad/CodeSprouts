@@ -1,0 +1,70 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #16a34a, #22c55e);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #1f2937;
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+input[type="file"], textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  outline: none;
+}
+
+button {
+  background-color: #22c55e;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #16a34a;
+}
+
+#resultContainer {
+  margin-top: 2rem;
+  text-align: left;
+  background: #111827;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
